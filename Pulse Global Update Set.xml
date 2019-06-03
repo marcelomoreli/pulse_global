@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-06-03 21:02:12">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description> Initial version</description>
+<inserted/>
+<name>Pulse - Global</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>8c91d48edb397b00cbdfd6aa489619f6</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>f4a150cedb397b00cbdfd6aa489619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<u_root_sys_id/>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_fcf9582bdbcfe380fce87bbb8c96195a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;sys_update_set&lt;/collection&gt;&lt;condition&gt;current.isValidField('u_root_sys_id') &amp;amp;&amp;amp; current.u_root_sys_id == ''&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Set Root Sys_id&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	// Set Root ID to be able to identify if any other environment have this update set already
+	var id = current.remote_sys_id.u_root_sys_id + '';
+	if (id == '' &amp;&amp; current.remote_sys_id == '') {
+		id = current.sys_id + '';
+	}
+	if (id != '') {
+		current.u_root_sys_id = id + '';
+	}
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jgbox&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-22 20:43:18&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fcf9582bdbcfe380fce87bbb8c96195a&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Root Sys_id&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pulse - Global"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fcf9582bdbcfe380fce87bbb8c96195a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mmoreli&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-07 18:55:18&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=fcf9582bdbcfe380fce87bbb8c96195a"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2023439767</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>34a150cedb397b00cbdfd6aa489619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25efa40000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Set Root Sys_id</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>f83cde646baf230066f4b3632a2a3b3f</update_guid>
+<update_guid_history>f83cde646baf230066f4b3632a2a3b3f:-2023439767,51b675dcfba3230026603b37f65d9afd:-819746272,2676b9dcfea32300f2bbb5e3fddbed52:875672945,9f36fd9cc8a3230082e062971f93b63c:-1140969812</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_be8c1544db012300cbdfd6aa48961947</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description&gt;Wraps GlideAjax, making it easier to call. Will return a  list of fields on row identified by the srcField and srcValue for one row on a table only.&lt;/description&gt;&lt;global&gt;true&lt;/global&gt;&lt;name&gt;glideAjaxHelper&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function glideAjaxHelper(tableName, srcField, srcValue, fieldList, useSecure, callback, debugEnabled, queryList){
+	//get reference to GlideAjax script and set parameters
+	var ga = new GlideAjax('TableDataHelper');
+	ga.addParam('sysparm_name','getDataByQuery');
+	ga.addParam('sysparm_table_name', tableName);
+	ga.addParam('sysparm_src_field', srcField);
+	ga.addParam('sysparm_src_value', srcValue);
+	ga.addParam('sysparm_field_list', fieldList);
+	ga.addParam('sysparm_use_secure', useSecure.toString());
+	queryList &amp;&amp; ga.addParam('sysparm_query_list', queryList);
+	ga.getXML(ParseUserData);
+	function ParseUserData(response) {
+		//parse JSON answer from the response
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		if(debugEnabled){
+			console.log('glideAjaxHelper debug enabled');
+			console.log('glideAjaxHelper useSecure: ' + useSecure);
+			console.log('glideAjaxHelper tableName: ' + tableName);
+			console.log('glideAjaxHelper srcField: ' + srcField);
+			console.log('glideAjaxHelper srcValue: ' + srcValue);
+			console.log('glideAjaxHelper fieldList: ' + fieldList);
+			console.log('glideAjaxHelper, answer: ' + answer);
+		}
+		//create a JavaScript answer object for easier processing in the client script
+		var ans_obj = JSON.parse(answer);
+		//if a callback was supplied send the answer object to it
+		callback &amp;&amp; callback(ans_obj);
+	}	
+}]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jgbox&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-04 18:23:59&lt;/sys_created_on&gt;&lt;sys_id&gt;be8c1544db012300cbdfd6aa48961947&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;glideAjaxHelper&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pulse - Global"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_be8c1544db012300cbdfd6aa48961947&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mmoreli&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-07 18:55:18&lt;/sys_updated_on&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-675743491</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>34a158cedb397b00cbdfd6aa48961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef5f0000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table/>
+<target_name>glideAjaxHelper</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>f43cde64f2af23009a76371dde51c635</update_guid>
+<update_guid_history>f43cde64f2af23009a76371dde51c635:-675743491,4dbc15443a012300006c3e74b020162c:1193303711</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_sys_update_set_u_status</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_status" table="sys_update_set"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes>edge_encryption_enabled=true</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Status</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_status</element><element_reference>false</element_reference><foreign_database/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>1000</max_length><name>sys_update_set</name><next_element/><primary>false</primary><read_only>true</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>mmoreli</sys_created_by><sys_created_on>2019-02-26 21:42:14</sys_created_on><sys_id>3a98b076db7b6700cbdfd6aa48961901</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Status</sys_name><sys_package display_value="Pulse - Global" source="0eee79acdbeb2300cbdfd6aa4896193b">0eee79acdbeb2300cbdfd6aa4896193b</sys_package><sys_policy/><sys_scope display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</sys_scope><sys_update_name>sys_dictionary_sys_update_set_u_status</sys_update_name><sys_updated_by>mmoreli</sys_updated_by><sys_updated_on>2019-02-26 21:42:53</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1574249829</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>38a150cedb397b00cbdfd6aa489619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef160000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Update Set.Status</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>e8c83476467b67009f3e9a161901edca</update_guid>
+<update_guid_history>e8c83476467b67009f3e9a161901edca:1574249829,c798b076cc7b6700e98a42cd09cfe50b:1808415503</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_d8847b99dbf3130089fb2fb7489619b3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PulseGlobal&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;PulseGlobal&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PulseGlobal = Class.create();
+PulseGlobal.prototype = {
+    initialize: function() {
+    },
+    
+    // Given a update set sys_id, retrieve update set.
+    retrieveUpdateSet: function(log, answer, instance, updateSetId) {
+        log.logDebug('Starting PulseGlobal.retrieveUpdateSet[' + updateSetId + ']');
+        
+        answer.updateSetId = updateSetId;
+
+        if (updateSetId != '') {
+            if (instance != '') {
+                answer.info.unshift('Checking if update set exists');
+                var remoteSets = new GlideRecord('sys_remote_update_set');
+                remoteSets.addEncodedQuery('sys_class_name=sys_remote_update_set^remote_sys_id=' + updateSetId);
+                remoteSets.query();
+                
+                if (remoteSets.next()) {
+                    answer.info.unshift('We already have a update set with the given Root ID');
+                    if (remoteSets.state == 'loaded' || remoteSets.state == 'loading' || remoteSets.state == 'previewed') {
+                        answer.info.unshift('The update set can be deleted, its state is ' + remoteSets.state);
+                        // Means we can delete it
+                        remoteSets.deleteRecord();
+                    } else {
+                        answer.error = 'The update set could not be loaded. There is already an update set on state ' + remoteSets.state;
+                        answer.success = false;
+                        return answer;
+                    }
+                } else {
+                    answer.info.push('This update set is new, its not present on this instance.');
+                    // First time we have this update set
+                }
+                
+                answer.info.unshift('Loading the update set...');
+                // Get the instance
+                var instanceGR = new GlideRecord('sys_update_set_source');
+                instanceGR.addEncodedQuery('urlLIKE://' + instance + '.service-now.com^active=true');
+                instanceGR.query();
+                
+                if (instanceGR.next()) {
+                    answer.info.unshift('Got the remote instance: ' + instanceGR.sys_id);
+                    
+                    var requestWS = new sn_ws.RESTMessageV2();
+                    requestWS.setEndpoint(instanceGR.url + '/api/now/table/sys_update_set/' + updateSetId);
+                    requestWS.setHttpMethod('GET');
+                    
+                    var user = instanceGR.username;
+                    var encrypter = new GlideEncrypter();
+                    var password = encrypter.decrypt(instanceGR.password);
+                    
+                    requestWS.setBasicAuth(user,password);
+                    requestWS.setRequestHeader("Accept","application/json");
+                    
+                    var responseWS = requestWS.execute();
+                    var respBody = responseWS.getBody();
+                    
+                    var updtXML = JSON.parse(respBody);
+                    
+                    if (typeof updtXML.result != 'undefined' &amp;&amp; typeof updtXML.result.sys_id != 'undefined' &amp;&amp;  updtXML.result.sys_id != '') {
+                        var uptXMLObj = updtXML.result;
+                        
+                        
+                        var retrievedUpdateSet = new GlideRecord('sys_remote_update_set');
+                        retrievedUpdateSet.initialize();
+                        
+                        retrievedUpdateSet.description = uptXMLObj.description;
+                        retrievedUpdateSet.name = uptXMLObj.name;
+                        retrievedUpdateSet.release_date = uptXMLObj.release_date;
+                        retrievedUpdateSet.remote_sys_id = uptXMLObj.sys_id;
+                        retrievedUpdateSet.application = uptXMLObj.application.value;
+                        retrievedUpdateSet.origin_sys_id = uptXMLObj.origin_sys_id;
+                        retrievedUpdateSet.u_root_sys_id = uptXMLObj.u_root_sys_id;
+                        retrievedUpdateSet.update_source = instanceGR.sys_id;
+                        
+                        var scopeGr = new GlideRecord('sys_scope');
+                        scopeGr.get(uptXMLObj.application.value);
+                        if (scopeGr.isValid()) {
+                            retrievedUpdateSet.application_name = scopeGr.name;
+                            retrievedUpdateSet.application_scope = scopeGr.scope;
+                            retrievedUpdateSet.application_version = scopeGr.version;
+                        }
+                        
+                        retrievedUpdateSet.state = "loading";
+                        
+                        var sysidRemote = retrievedUpdateSet.insert();
+                        answer.remote_sys_id = sysidRemote;
+                        answer.info.unshift('Created:' + sysidRemote);
+                        
+                        answer.info.unshift('Getting all the updates now..');
+                        
+                        
+                        var requestWSXML = new sn_ws.RESTMessageV2();
+                        requestWSXML.setEndpoint(instanceGR.url + '/api/now/table/sys_update_xml?sysparm_query=update_set%3D' + updateSetId + '&amp;sysparm_display_value=false');
+                        requestWSXML.setHttpMethod('GET');
+                        requestWSXML.setBasicAuth(user,password);
+                        requestWSXML.setRequestHeader("Accept","application/json");
+                        
+                        var responseWSXML = requestWSXML.execute();
+                        var respBodyXML = responseWSXML.getBody();
+                        
+                        var updtXMLItens = JSON.parse(respBodyXML);
+                        for (var x = 0; x &lt; updtXMLItens.result.length; x++) {
+                            var inObj = updtXMLItens.result[x];
+                            answer.info.push('Item:' + inObj.target_name);
+                            var newXMLRec = new GlideRecord('sys_update_xml');
+                            newXMLRec.initialize();
+                            newXMLRec.update_set = '';
+                            newXMLRec.comments = inObj.comments;
+                            newXMLRec.target_name = inObj.target_name;
+                            newXMLRec.sys_mod_count = inObj.sys_mod_count;
+                            newXMLRec.replace_on_upgrade = inObj.replace_on_upgrade;
+                            newXMLRec.sys_updated_on = inObj.sys_updated_on;
+                            newXMLRec.sys_tags = inObj.sys_tags;
+                            newXMLRec.type = inObj.type;
+                            newXMLRec.view = inObj.view;
+                            newXMLRec.sys_updated_by = inObj.sys_updated_by;
+                            newXMLRec.application = inObj.application.value;
+                            newXMLRec.payload = inObj.payload;
+                            newXMLRec.sys_created_on = inObj.sys_created_on;
+                            newXMLRec.name = inObj.name;
+                            newXMLRec.remote_update_set = sysidRemote;
+                            newXMLRec.action = inObj.action;
+                            newXMLRec.update_domain = inObj.update_domain.value;
+                            newXMLRec.category = inObj.category;
+                            newXMLRec.sys_created_by = inObj.sys_created_by;
+                            newXMLRec.table = inObj.table;
+                            newXMLRec.autoSysFields(false);
+                            newXMLRec.insert();
+                        }
+                        
+                        retrievedUpdateSet.state = 'loaded';
+                        retrievedUpdateSet.update();
+                        answer.info.unshift('Load completed!');
+                        answer.success = true;
+                    } else {
+                        answer.error = 'No update set found.';
+                    }   
+                } else {
+                    answer.error = 'Instance not found on this instance as a remote source.';
+                }
+            } else {
+                answer.error = 'Instance of the update set not sent.';
+            }
+        } else {
+            answer.error = 'sys_id of the update set not sent.';
+        }
+        log.logDebug('Answer from Global.retrieve:' + JSON.stringify(answer));
+        return answer;
+    },
+
+    previewUpdateSet: function(log, localID) {
+        log.logDebug('Starting PulseGlobal.previewUpdateSet');
+        var usp = new global.UpdateSetPreviewer();
+        usp.removePreviewRecords(localID);
+        usp.generatePreviewRecords(localID);
+    },
+
+    handlePreviewProblem: function(log, problemID, resolution) {
+        log.logDebug('Starting PulseGlobal.handlePreviewProblem');
+        var prevProblem = new GlideRecord('sys_update_preview_problem');
+        prevProblem.addQuery('sys_id', problemID);
+        prevProblem.query();
+        if (prevProblem.next()) {
+            if (resolution == 'ignored') {
+                log.logDebug('Ignoring preview problem ' + problemID);
+                var actionA = new GlideAction('43d7d01a97b00100f309124eda2975e4'); // Action to Accept remote changes
+                var ppa = new GlidePreviewProblemAction(actionA, prevProblem);
+                ppa.ignoreProblem();
+            }
+            if (resolution == 'skipped') {
+                log.logDebug('Skipping preview problem ' + problemID);
+                var actionS = new GlideAction('f6f5730c97410100d308124eda29758d'); // Action to Skip remote changes
+                var pps = new GlidePreviewProblemAction(actionS, prevProblem);
+                pps.skipUpdate();
+            }
+        }
+    },
+    
+    commitUpdateSet: function(log, remoteUpdateSet) {
+        log.logDebug('Starting PulseGlobal.commitUpdateSet');
+        var answer = {};
+        var worker = new GlideUpdateSetWorker();
+        // inserts the new local update set and updates the remote update set accordingly
+        var lus = new GlideRecord('sys_update_set');
+        var lus_sysid = worker.remoteUpdateSetCommit(lus, remoteUpdateSet, remoteUpdateSet.update_source.url);
+        var usAjax = new global.UpdateSetCommitAjax();
+        usAjax._copyUpdateXML(lus_sysid, remoteUpdateSet.getValue('sys_id'));
+        remoteUpdateSet.update();
+        
+        worker.setUpdateSetSysId(lus_sysid);
+        worker.setBackground(true);
+        worker.start();
+        answer.lus_sysid = lus_sysid;
+        answer.progressID = worker.progressID;
+        return answer;
+    },
+    
+    setValue: function(log, table, sys_id, field, value) {
+        log.logDebug('Starting PulseGlobal.setValue for table[' + table + '] sys_id[' + sys_id + ']');
+        var updated = false;
+        var grRecord = new GlideRecord(table);
+        if (grRecord.isValid()) {
+            grRecord.query('sys_id', sys_id);
+            if (grRecord.next()) {
+                if (grRecord.isValidField(field)) {
+                    grRecord.setValue(field, value);
+                    grRecord.update();
+                    updated = true;
+                    log.logDebug('updating ' + field + ' to ' + value);
+                }
+            }
+        }
+        log.logDebug('Updated: ' + updated);
+        return updated;
+    },
+    
+    createUpdateSet: function(log, name, scope, description) {
+        log.logDebug('Starting PulseGlobal.createUpdateSet');
+        var newSet = new GlideRecord('sys_update_set');
+        newSet.setValue('name', name);
+        newSet.setValue('application', scope);
+        newSet.setValue('description', description);
+        var updateSetID = newSet.insert() + '';
+        log.logDebug('updateSetID: ' + updateSetID);
+        return updateSetID;
+    },
+    
+    callAPI: function(log, environment, path, operation, body) {
+        log.logDebug('Starting PulseGlobal.callAPI[' + environment + ',' + path + ',' + operation + ',' + body + ']');
+        var answer = {
+            success : false,
+            message : ''
+        };
+        log.logDebug('Starting callAPI2[' + environment.getValue('url') + ']');
+        if (environment.getValue('url') &amp;&amp; path != '' &amp;&amp; operation != '') {
+            var endPoint = environment.getValue('url') + path;
+            log.logDebug('endPoint:' + endPoint);
+            var r = new sn_ws.RESTMessageV2();
+            r.setEndpoint(endPoint);
+            r.setBasicAuth(environment.getValue('user'), (new GlideEncrypter().decrypt(environment.getValue('password'))));
+            r.setHttpMethod(operation);
+            if (operation != 'get') {
+                r.setRequestBody(body);
+            }
+            var response = r.execute();
+            var responseBody = response.getBody();
+            log.logDebug('responseBody:' + responseBody);
+            var httpStatus = response.getStatusCode();
+            if (responseBody != '') {
+                answer = JSON.parse(responseBody);
+                return answer.result;
+            }
+        } else {
+            answer.message = 'Missing parameter!';
+        }
+        log.logDebug('Answer from callAPI: ' + JSON.stringify(answer));
+        return answer;
+    },
+
+    codeScan: function(log, setID) {
+        log.logDebug('Starting PulseGlobal.codeScan [ ' + setID + ']');
+        // findings is our array to keep track of all results
+        var findings = [];
+        var finding;
+
+        var SIcode = new GlideRecord('sys_script_include');
+        SIcode.addQuery('sys_id', '6f2ffe64db236300cbdfd6aa48961930'); // Get a real record
+        SIcode.query();
+        SIcode.next();
+
+        var setContents = new GlideRecord('sys_update_xml');
+        setContents.addQuery('update_set', setID);
+        setContents.query();
+
+        while (setContents.next()) {
+            var xmlDoc = new XMLDocument2();
+            xmlDoc.parseXML(setContents.payload);
+            var recUpdateNode = xmlDoc.getNode('/record_update');
+            var itemTable = recUpdateNode.getAttribute('table');
+            if (!itemTable) {
+                itemTable = recUpdateNode.getFirstChild().getNodeName();
+            }
+            var itemSysID = xmlDoc.getNodeText('/record_update/' + itemTable + '/' + itemTable + '/sys_id');
+            if (!itemSysID) {
+              itemSysID = xmlDoc.getNodeText('/record_update/' + itemTable + '/sys_id');
+            }
+            log.logDebug('Code scanning [' + itemTable + ':' + itemSysID + ']');
+            // Check existance of item
+            if (itemTable &amp;&amp; itemSysID) {
+                var grItem = new GlideRecord(itemTable);
+                grItem.addQuery('sys_id', itemSysID);
+                grItem.query();
+
+                if (grItem.next()) {
+                    var checks = new GlideRecord('x_wms_pulse_sn_scan_rule');
+                    checks.addQuery('active', true);
+                    checks.addQuery('applies_to', itemTable);
+                    checks.query();
+                    while (checks.next()) {
+                        log.logDebug('Checking: ' + checks.short_description);
+                        var match = GlideFilter.checkRecord(grItem, checks.condition);
+                        if (match) {
+                            if (checks.advanced) {
+                                // Run Scripts
+                                var evaluator = new GlideScopedEvaluator();
+                                SIcode.script = globalChecks.script + '';
+                                evaluator.evaluateScript(SIcode, 'script', {current : grItem, update_set_item : setContents, setID : setID, result : null});
+                                var result = evaluator.getVariable('result');
+                                try {
+                                    var results = JSON.parse(result);
+                                    for (var x = 0; x &lt; results.length ; x++) {
+                                        if (results[x] &amp;&amp; results[x].record_table &amp;&amp; results[x].record_sys_id &amp;&amp; results[x].recommendation) {
+                                            if (!results[x].recommendation || results[x].recommendation == '') {
+                                                results[x].recommendation = checks.getValue('recommendation');
+                                            }
+                                            if (!results[x].impact_type || results[x].impact_type == '') {
+                                                results[x].impact_type = checks.getDisplayValue('impact_type');
+                                            }
+                                            if (!results[x].impact_level || results[x].impact_level == '') {
+                                                results[x].impact_level = checks.getDisplayValue('impact_level');
+                                            }
+                                            if (!results[x].rule_id || results[x].rule_id == '') {
+                                                results[x].rule_id = checks.getValue('sys_id');
+                                            }
+                                            if (!results[x].update_xml_sys_id || results[x].update_xml_sys_id == '') {
+                                                results[x].update_xml_sys_id = setContents.getValue('sys_id');
+                                            }
+                                            findings.push(results[x]);
+                                        } else {
+                                            log.logDebug('Missing something on return:' + results[x]);
+                                        }
+                                    }
+                                } catch (e) {
+                                    log.logDebug('Error on Check [' + checks.getValue('sys_id') + ']: ' + e);
+                                }
+                            } else {
+                                finding = {};
+                                finding.rule_id = checks.getValue('sys_id');
+                                finding.impact_type = checks.getDisplayValue('impact_type');
+                                finding.impact_level = checks.getDisplayValue('impact_level');
+                                finding.recommendation = checks.getValue('recommendation');
+                                finding.record_sys_id = itemSysID + '';
+                                finding.record_table = itemTable + '';
+                                finding.update_xml_sys_id = setContents.getValue('sys_id');
+                                if (setContents.action == 'DELETE') {
+                                    finding.recommendation = '[DELETE] ' + finding.recommendation;
+                                }
+                                findings.push(finding);
+                            }
+                        }
+                    }
+                } else {
+                    log.logDebug('Item Not Found!');
+                }
+            }
+        }
+
+        var globalChecks = new GlideRecord('x_wms_pulse_sn_scan_rule');
+        globalChecks.addQuery('active', true);
+        globalChecks.addQuery('applies_to', '');
+        globalChecks.query();
+        while (globalChecks.next()) {
+            log.logDebug('Running Global Check: ' + globalChecks.short_description);
+            var globalEvaluator = new GlideScopedEvaluator();
+            SIcode.script = globalChecks.script + '';
+            globalEvaluator.evaluateScript(SIcode, 'script', {current : null, update_set_item : null, setID : setID, result : null});
+            var resultFromScript = globalEvaluator.getVariable('result');
+            try {
+                var resultList = JSON.parse(resultFromScript);
+                for (var y = 0; y &lt; resultList.length ; y++) {
+                    if (resultList[y] &amp;&amp; resultList[y].record_table &amp;&amp; resultList[y].record_sys_id &amp;&amp; resultList[y].update_xml_sys_id) {
+                        if (!resultList[y].recommendation || resultList[y].recommendation == '') {
+                            resultList[y].recommendation = globalChecks.getValue('recommendation');
+                        }
+                        if (!resultList[y].impact_type || resultList[y].impact_type == '') {
+                            resultList[y].impact_type = globalChecks.getDisplayValue('impact_type');
+                        }
+                        if (!resultList[y].impact_level || resultList[y].impact_level == '') {
+                            resultList[y].impact_level = globalChecks.getDisplayValue('impact_level');
+                        }
+                        if (!resultList[y].rule_id || resultList[y].rule_id == '') {
+                            resultList[y].rule_id = globalChecks.getValue('sys_id');
+                        }
+                        findings.push(resultList[y]);
+                    } else {
+                        log.logDebug('Missing something on return on Global Checks:' + JSON.stringify(resultList[y]));
+                    } 
+                }
+            } catch (e) {
+                log.logDebug('Error on Check [' + globalChecks.getValue('sys_id') + ']: ' + e);
+            }
+        }
+
+        return findings;
+    },
+    
+    // Schedule Dev request to be promoted to upper environment
+    scheduleInstallation: function(log, devRequest) {
+        log.logDebug('Creating scheduled job for [' + devRequest.getValue('number') + ']');
+        var answer = {
+            success : false,
+            message : '',
+            time : null,
+            final_state : null
+        };
+
+        // Remove the current job, in case of it's scheduled
+        var getScheduledS = new GlideRecord('sysauto_script');
+        getScheduledS.addQuery('name','devRequest.' + devRequest.getValue('number'));
+        getScheduledS.query();
+        
+        if (getScheduledS.next()) {
+            // If it exists, removeScheduleInstallation should be called first.
+            this.removeScheduleInstallation(log, devRequest.getValue('number'));
+        }
+
+        if (devRequest.getValue('due_date') &amp;&amp; devRequest.getValue('due_date') != '') {
+            if (devRequest.getValue('state') == x_wms_pulse.DevRequestStates.PENDING_SCHEDULE || devRequest.getValue('state') == x_wms_pulse.DevRequestStates.SCHEDULED) {
+                var targetTime = new GlideDateTime();
+                var actualDateTime = new GlideDateTime();
+
+                var plannedDateTime = new GlideDateTime();
+                plannedDateTime.setDisplayValue(devRequest.due_date.getDisplayValue());
+                
+                if (plannedDateTime.getNumericValue() &lt; actualDateTime.getNumericValue()) {
+                    // Add some seconds to the installation;
+                    targetTime.addSeconds(60);
+                    log.logDebug('Setting Schedule time to: ' + targetTime.getDisplayValue());
+                } else {
+                    targetTime.setDisplayValue(devRequest.due_date.getDisplayValue());
+                }
+
+                answer.time = targetTime;
+
+                var script = "";
+                script += "var getDevReq = new GlideRecord('x_wms_pulse_dev_request');\n";
+                script += "getDevReq.get('" + devRequest.getValue('sys_id') + "');\n\n";
+                script += "gs.info('Kicking off " + devRequest.getValue('number') + "');\n";
+                script += "if (getDevReq.getValue('state') == x_wms_pulse.DevRequestStates.SCHEDULED) {\n";
+                script += "    var date = getDevReq.getDisplayValue('due_date');\n";
+                script += "    if (date == '" + targetTime.getDisplayValue() + "') {\n";
+                script += "        var pu = new x_wms_pulse.PulseUtils();\n";
+                script += "        pu.localMoveToPromoting(getDevReq);\n";
+                script += "    }\n";
+                script += "}\n\n";
+                script += "var l = new global.GSLog('x_wms_pulse.log_level', 'PulseGlobal');\n";
+                script += "var pulseGlobal = new global.PulseGlobal();\n";
+                script += "pulseGlobal.removeScheduleInstallation(l, '"+  devRequest.getValue('number') +"');\n";
+                
+                var getScheduledScript = new GlideRecord('sysauto_script');
+                getScheduledScript.initialize();
+                getScheduledScript.name = 'devRequest.' + devRequest.getValue('number');
+                getScheduledScript.run_type = 'on_demand';
+                getScheduledScript.sys_class_name = 'sysauto_script';
+                getScheduledScript.run_as = 'admin';
+                getScheduledScript.sys_scope = 'global';
+                getScheduledScript.script = script;
+                getScheduledScript.get(getScheduledScript.insert());
+                getScheduledScript.run_start = targetTime;
+                getScheduledScript.update();
+                getScheduledScript.run_type = 'once';
+                getScheduledScript.update();
+                answer.message = 'Development request scheduled for ' + targetTime.getDisplayValue();
+                answer.success = true;
+
+                if (devRequest.getValue('state') == x_wms_pulse.DevRequestStates.PENDING_SCHEDULE) {
+                    answer.final_state = x_wms_pulse.DevRequestStates.GENERATING_CHANGE;
+                }
+            }
+        } else {
+            answer.success = true;
+            answer.message = 'Release date field is empty';
+            if (devRequest.getValue('state') == x_wms_pulse.DevRequestStates.SCHEDULED || devRequest.getValue('state') == x_wms_pulse.DevRequestStates.GENERATING_CHANGE) {
+                answer.final_state = x_wms_pulse.DevRequestStates.PENDING_SCHEDULE;
+            }
+        }
+        log.logDebug('Answer from scheduleInstallation: ' + JSON.stringify(answer));
+        return answer;
+    },
+
+    // Removes a scheduled job
+    removeScheduleInstallation: function(log, devRequestNumber) {
+        log.logDebug('Deleting scheduled job for [' + devRequestNumber + ']');
+        var answer = {
+            success : false,
+            message : ''
+        };
+        var getScheduledS = new GlideRecord('sysauto_script');
+        getScheduledS.addQuery('name','devRequest.' + devRequestNumber);
+        getScheduledS.query();
+        
+        if (getScheduledS.next()) {
+            getScheduledS.deleteRecord();
+            answer.message = 'Schedule removed.';
+            log.logDebug('Schedule removed.');
+        } else {
+            answer.message = 'Schedule not found.';
+            log.logDebug('Schedule not found.');
+        }
+        answer.success = true;
+        log.logDebug('Answer from removeScheduleInstallation: ' + JSON.stringify(answer));
+        return answer;
+    },
+	
+	generateChange: function(log, devRequest) {
+        log.logDebug('Starting PulseGlobal.generateChange[' + devRequest.getValue('number') + ']');
+        var answer = {
+            success : false,
+            message : '',
+			rfc: ''
+        };
+        var chg = devRequest.getValue('change_request');
+
+        var gdt = new GlideDateTime();
+        gdt.setDisplayValue(devRequest.getDisplayValue('due_date'));
+        gdt.addSeconds(60*4*60); // 4 hours
+
+        if (!chg) {
+            var newChange = new GlideRecord('change_request');
+            newChange.newRecord();
+            var templateID = gs.getProperty('x_wms_pulse.change_request_template');
+            if (templateID) {
+                newChange.applyTemplate(templateID);
+            }
+            newChange.short_description = 'Automated Change for ServiceNow ' + devRequest.getDisplayValue('category') + ': ' + devRequest.getValue('number');
+            newChange.description = 'Change details:';
+            newChange.description += '\nSummary: ' + devRequest.getValue('short_description');
+            newChange.description += '\nRelease Notes: ' + devRequest.getValue('description');
+            newChange.start_date = devRequest.due_date;
+            newChange.end_date = gdt;
+			answer.rfc = newChange.insert() + '';
+            answer.success = true;
+            answer.message = 'New Change Request Created';
+        } else {
+            // Update time on CHG
+            var oldChange = new GlideRecord('change_request');
+            oldChange.addQuery('sys_id', chg);
+            oldChange.query();
+
+            if (oldChange.next()) {
+                oldChange.start_date = devRequest.due_date;
+                oldChange.end_date = gdt;
+                oldChange.update();
+            }
+            answer.success = true;
+            answer.message = 'Change Request Updated';
+        }
+        
+        log.logDebug('Answer from generateChange: ' + JSON.stringify(answer));
+        return answer;
+    },
+
+	closeChange: function(log, devRequest) {
+        log.logDebug('Starting PulseGlobal.closeChange[' + devRequest.getValue('number') + ']');
+        var answer = {
+            success : false,
+            message : ''
+        };
+        if (devRequest.getValue('change_request')) {
+            var chg = new GlideRecord('change_request');
+            if (chg.get(devRequest.change_request)) {
+                chg.setValue('state', '-1'); // Implement
+                chg.update();
+                chg.setValue('state', '0'); // Review
+                chg.update();
+                chg.setValue('state', '3'); // Closed
+                chg.setValue('close_notes', 'Update set promoted correctly.');
+                chg.setValue('close_code', 'successful');
+                chg.update();
+                answer.success = true;
+                answer.message = 'Change Request Closed.';
+            }
+        } else {
+            answer.success = true;
+            answer.message = 'There is not a change request for this Development!';
+        }
+        log.logDebug('Answer from closeChange: ' + JSON.stringify(answer));
+        return answer;
+    },
+
+    localCreateRemoteUpdateSet: function(log, uptXMLObj) {
+        var answer = {
+            success : false,
+            created: false,
+            message : ''
+        };
+        log.logDebug('Starting PulseGlobal.localCreateRemoteUpdateSet');
+        // Check if update set is already in this environment
+        var localUS = new GlideRecord('sys_update_set');
+        localUS.addQuery('sys_id', uptXMLObj.sys_id.toString())
+        localUS.query();
+        if (localUS.next()) {
+            answer.local_sys_id = localUS.sys_id;
+            answer.remote_sys_id = localUS.remote_sys_id + '';
+            answer.state = localUS.getValue('state');
+            answer.success = true;
+            answer.errorMessage = '';
+            answer.message = 'An update set was found related to this DEV request already. The update set is now linked with this Dev Request.';
+            return answer;
+        }
+
+        var retrievedObj = new GlideRecord('sys_remote_update_set');
+        retrievedObj.addQuery('remote_sys_id', uptXMLObj.sys_id.toString())
+        retrievedObj.query();
+        if (retrievedObj.next()) {
+            answer.local_sys_id = '';
+            answer.remote_sys_id = retrievedObj.sys_id + '';
+            answer.state = retrievedObj.getValue('state');
+            answer.success = true;
+            answer.errorMessage = '';
+            answer.message = 'An retrieved update set was found related to this DEV request already. The update set is now linked with this Dev Request.';
+            return answer;
+        } else {
+            // Create a new remote update set
+            var responseSysId = '';
+            var retrievedUpdateSet = new GlideRecord('sys_remote_update_set');
+            retrievedUpdateSet.initialize();
+            retrievedUpdateSet.setValue('description', uptXMLObj.description + '');
+            retrievedUpdateSet.setValue('name', uptXMLObj.name + '');
+            retrievedUpdateSet.setValue('release_date', uptXMLObj.release_date + '');
+            retrievedUpdateSet.setValue('remote_sys_id', uptXMLObj.sys_id);
+            retrievedUpdateSet.setValue('u_root_sys_id', uptXMLObj.sys_id);
+            retrievedUpdateSet.setValue('application', uptXMLObj.application['#text'] + '');
+            retrievedUpdateSet.setValue('origin_sys_id', uptXMLObj.origin_sys_id + '');
+            retrievedUpdateSet.setValue('application_name', uptXMLObj.application_name + '');
+            retrievedUpdateSet.setValue('application_scope', uptXMLObj.application_scope + '');
+            retrievedUpdateSet.setValue('application_version', uptXMLObj.application_version + '');
+            retrievedUpdateSet.setValue('state', "loading");
+            log.logDebug('Creating US: ' + uptXMLObj.name);
+            responseSysId = retrievedUpdateSet.insert() + '';
+            if (responseSysId.length == 32) {
+                var remoteGR = new GlideRecord('sys_remote_update_set');
+                remoteGR.addQuery('sys_id',responseSysId);
+                remoteGR.addQuery('name', uptXMLObj.name + ''); // this is to check ACLs for write
+                remoteGR.query();
+                if (remoteGR.next()) {
+                    log.logDebug('Update set created correctly: ' + remoteGR.getValue('sys_id'));
+                    answer.state = remoteGR.getValue('state');
+                    answer.local_sys_id = '';
+                    answer.remote_sys_id = remoteGR.getValue('sys_id') + '';
+                    answer.created = true;
+                    answer.success = true;
+                } else {
+                    answer.errorMessage = 'Update set was not created. ACL problem maybe?';
+                }
+            }
+        }
+
+        return answer;
+    },
+
+    localInsertUpdateSetContent: function(log, setID, uptXMLArray) {
+        log.logDebug('Starting Global.localInsertUpdateSetContent - setID [' + setID + ']');
+        var answer = {
+            success : false,
+            message : ''
+        };
+        var inObj;
+        var newXMLRec;
+        var len = 1;
+        if (!uptXMLArray) {
+            // Update set is empty
+            // Proceed normally
+        } else {
+            if (!uptXMLArray.length) {
+                // Means we only have 1 change
+                inObj = uptXMLArray;
+                this.insertUpdateXML(setID, inObj);
+            } else {
+                len = uptXMLArray.length;
+            }
+            for (var x = 0; x &lt; uptXMLArray.length; x++) {
+                inObj = uptXMLArray[x];
+                this.insertUpdateXML(setID, inObj);
+            }
+        }
+        var expectedLen = this.getUpdatesCount(setID);
+        if (expectedLen == len) {
+            // All good, all inserted
+            var remoteGR = new GlideRecord('sys_remote_update_set');
+            remoteGR.addQuery('sys_id', setID);
+            remoteGR.addQuery('state', 'loading');
+            remoteGR.query();
+            if (remoteGR.next()) {
+                remoteGR.setValue('state', 'loaded');
+                remoteGR.update();
+                answer.errorMessage = '';
+                answer.message = 'All changes loaded!';
+                answer.success = true;
+            } else {
+                answer.errorMessage = 'Update set not found for changing state! Something is wrong!';
+            }
+        } else {
+            answer.errorMessage = 'Not all updates were written - warning! Something is wrong! Count: ' + len + ' Expected: ' + expectedLen;
+        }
+        return answer;
+    },
+
+    getUpdatesCount: function(setID) {
+        var count = -1;
+        var updateSet = new GlideRecord('sys_remote_update_set');
+        updateSet.addQuery('sys_id', setID);
+        updateSet.query();
+        
+        if (updateSet.next()) {
+            count = 0;
+            var changes = new GlideRecord('sys_update_xml');
+            changes.addQuery('remote_update_set', setID);
+            changes.query();
+            while (changes.next()) {
+                count++;
+            }
+        }
+        return count;
+    },
+
+    insertUpdateXML: function(setID, inObj) {
+        var newXMLRec = new GlideRecord('sys_update_xml');
+        newXMLRec.initialize();
+        newXMLRec.setValue('update_set', '');
+        if (inObj.comments)
+        newXMLRec.setValue('comments', inObj.comments);
+        newXMLRec.setValue('target_name', inObj.target_name);
+        newXMLRec.setValue('sys_mod_count', inObj.sys_mod_count);
+        newXMLRec.setValue('replace_on_upgrade', inObj.replace_on_upgrade);
+        newXMLRec.setValue('sys_updated_on', inObj.sys_updated_on);
+        newXMLRec.setValue('type', inObj.type);
+        if (inObj.view)
+        newXMLRec.setValue('view', inObj.view);
+        newXMLRec.setValue('sys_updated_by', inObj.sys_updated_by);
+        newXMLRec.setValue('application', inObj.application['#text']);
+        newXMLRec.setValue('payload', inObj.payload);
+        newXMLRec.setValue('sys_created_on', inObj.sys_created_on);
+        newXMLRec.setValue('name', inObj.name);
+        newXMLRec.setValue('remote_update_set', setID);
+        newXMLRec.setValue('action', inObj.action);
+        newXMLRec.setValue('update_domain', inObj.update_domain);
+        newXMLRec.setValue('category', inObj.category);
+        newXMLRec.setValue('sys_created_by', inObj.sys_created_by);
+        newXMLRec.setValue('table', inObj.table);
+        newXMLRec.autoSysFields(false);
+        newXMLRec.insert();
+    },
+
+    exportUpdateSet: function(updateSet) {
+        var updateSetExport = new global.UpdateSetExport();
+        var sysid = updateSetExport.exportUpdateSet(updateSet);
+        return sysid;
+    },
+
+    xmlToObject: function(xmlString) {
+        var xmlHelper = new XMLHelper();
+        return xmlHelper.toObject(xmlString);
+    },
+    
+    type: 'PulseGlobal'
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mmoreli&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-07 23:22:09&lt;/sys_created_on&gt;&lt;sys_id&gt;d8847b99dbf3130089fb2fb7489619b3&lt;/sys_id&gt;&lt;sys_mod_count&gt;78&lt;/sys_mod_count&gt;&lt;sys_name&gt;PulseGlobal&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pulse - Global"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_d8847b99dbf3130089fb2fb7489619b3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mmoreli&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-03 19:08:17&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1022115606</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>38a158cedb397b00cbdfd6aa48961982</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef7d0000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table/>
+<target_name>PulseGlobal</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>42973b7da6f57b00c4079f096658cd74</update_guid>
+<update_guid_history>42973b7da6f57b00c4079f096658cd74:1022115606,79c7bc053231f7001423266c14ddc0dd:-1165102511,0f17fc053531f7002358c06b3df20d25:1396028706,d6194c81e97db7004149d87442a82a94:-565026234,18e87f242df1b7001a9c03f391d6d74f:149703252,e5651fa8f971b7006942f4608f3d8f82:-1239193379,7e509f241971b7007d173789bd9faca4:1587488810,02788f24af71b7004feb1b1de46c08b3:-1673033509,c43707242671b700276afd382c39e7d9:-736830030,51c48ba0e871b700fb2f8a18c2406793:589833234,1f281a98ea35770065d2aff9133930cb:453364301,a74e4c04373537001c0a1e5b9a691311:436884112,134d67ff5da13700e6999a343a3cd301:871397138,33f68f635ce5f30016da4774fc28ed80:2100034914,b7c447eff6a5f30018773bb7f03ea454:1272762326,90ea0cbec0ed33008f859b517ec43292:-997171020,c3ade7aac1ad33003337a2c483931af8:1361516951,5186342237e5330062d94b6251f03f6a:688457633,20e333d2b12533007c56616fcffdcff8:1294123901,8e433f92e32533009419b8ed12e8562d:-310828739,ef942b1a1ce13300df4971325cdf5f26:273478477,e38167568ce133000ecae51a5d288b4d:-524940715,a8e0ef56a4e133004cb941dd50448e0d:-678998893,bcc7951775c9f700f34d5f909d05fd9d:1571529082,779695d329c9f70077a09dbdf894078c:904276787,a0661d9367c9f7006b1d1d1581a2325c:-1010467536,9ec599930cc9f7005051f9b9d4f42581:861479327,24655513b3c9f7006aa8808a86b7074b:-1312676215,a832d1136bc9f700cae976f93c38c1ad:-1408904661,7571d5df4f89f70033fac549a2b0434a:-1595745766,1fd015df7e89f700c7e20207d1f1c881:-632075459,0af8c95b1089f7001c9b7775a812313a:-874317948,6258c95bca89f70048aeab84ecbf354f:-350364341,dd08c55b1789f7009ed06173056a9676:-24236438,f977891bae89f700b156ac95a1ce0421:1767832625,60f34d572e89f7004f91db528bccdd13:2034647775,535f7c53d189f7009d9ef86bc1d230fa:-1739624927,b62fbc533389f7007f2f88324f0f3612:-1213001393,782e3853d789f700c8bd5b467e22c39b:-405648645,6e877feaa741b70077b6fa541ad57896:-1550815757,eb0a3a6245cd77003a2f50dbe2d860b2:-1359361382,97ee2aea558d7700bed44911c27775bd:539018535,f4086266b58d770079dfcb0439bf5f59:-1905553961,cd0f9b3e4d603300139987db291801d5:-370377004,5dfe177a9060330087ee9f0f59da1e4a:386949761,b8e12375aae323002cc5f129e81de4ee:-145362578,73516375e8e323000aaa075be83f0436:624247990,20b0aff1a1e32300f8bd3391041df047:404300846,173f1f710ce3230035c7153a79a5c41e:-2122320046,d3704768ee236300aad6852a59f292a6:-1650932612,4e100f641a2363006ed0cc3edeeed52c:-368165686,fe8c3e6477236300731163604c6f2f1d:-642719012,5e697a6419236300f8d7fb5bd1c554d9:1752935992,cb187624b62363001db2adf2fb1d5823:1812016862,d7bfea6c4fef230070d758351cb165de:1610977522,3bdeea6cbaef2300b219973d643b1cd8:257034239,ff5e2a6c5def2300877562fb9d9e71f7:-117176712,6fabaae87eef230080934844309d0082:-461515430,d4ea26a821ef23004bb4d459cb1b0607:-1946952093,73492ee4daef2300eeb4d7ba00071687:-1436478557,fc3cde64d2af230096bdf849fc9b0138:725517044,29a3cd90d263230062905ffb28903954:2132261291,146a799a8f739300dc1c0964ca5c1b44:1586084974,4af9ec4250375300b4d2c9e611a73bd4:-1989330773,2f64f829b2771300110ed7fd667913ee:-520856826,970b2c29b07713001d2ba7691acc63f5:-1011067094,124a68e51a7713004ff3f29e1315bafb:-341121249,8b3724a5cf771300924e935376b7190e:820592607,7f762c65b2771300ad673c9181e4117c:1131982671,1b1668653277130035b7a1f23a92467b:901092252,2fc5202587771300a8de07307db3732a:1128792544,b9852c65927713003e11466ebcdc9174:-1061174541,7275e865b47713000eff0a03058dbcd5:-933896335,5ab6586dd2371300ffe726d5e44308ae:-239113551,adc54cadf2f31300f009a909c7217c9d:-2145020087,eff8fb5d1df31300125f7ca828009211:101868685,80b7f79d13f313004fab4fcbc1760426:-1601898512,8e65735d62f3130049e3fbd6c2a822d2:-787892783,e7b47f1d52f313005220b9c2497267e3:1598751265</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_sys_update_set_u_status_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_status" label="Status" language="en" table="sys_update_set"><sys_documentation action="INSERT_OR_UPDATE"><element>u_status</element><help/><hint/><label>Status</label><language>en</language><name>sys_update_set</name><plural>Status</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>mmoreli</sys_created_by><sys_created_on>2019-02-26 21:42:14</sys_created_on><sys_id>3e98b076db7b6700cbdfd6aa48961902</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Status</sys_name><sys_package display_value="Pulse - Global" source="0eee79acdbeb2300cbdfd6aa4896193b">0eee79acdbeb2300cbdfd6aa4896193b</sys_package><sys_policy/><sys_scope display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</sys_scope><sys_update_name>sys_documentation_sys_update_set_u_status_en</sys_update_name><sys_updated_by>mmoreli</sys_updated_by><sys_updated_on>2019-02-26 21:42:14</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-737739691</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>70a150cedb397b00cbdfd6aa489619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef1f0000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Update Set.Status</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>8b98b076517b6700a8ada0775f7f2d0c</update_guid>
+<update_guid_history>8b98b076517b6700a8ada0775f7f2d0c:-737739691</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_e8c2ef75dbe32300cbdfd6aa48961995</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2/&gt;&lt;comments/&gt;&lt;condition&gt;current.state == 'complete' &amp;amp;&amp;amp; gs.hasRole('x_wms_pulse.developer')&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Send to Review&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;101&lt;/order&gt;&lt;script&gt;&lt;![CDATA[sendToReview();
+
+function sendToReview() {
+	action.setRedirectURL(current);
+	var updateSetUtils = new x_wms_pulse.PulseUtils();
+	current.setValue('u_status', 'Testing the preview of this update set. Hold on a moment.');
+	current.update();
+	var answer = updateSetUtils.remoteTestPreview(current.sys_id + '');
+	if (answer) {
+		if (answer.message) {
+			gs.addInfoMessage(answer.message);
+		} else {
+			gs.addInfoMessage(answer);
+		}
+	} else {
+		gs.addInfoMessage('API Call failed. Contact your administrator');
+	}
+}
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mmoreli&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-11 21:16:00&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e8c2ef75dbe32300cbdfd6aa48961995&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;Send to Review&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Pulse - Global" source="0eee79acdbeb2300cbdfd6aa4896193b"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pulse - Global"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_e8c2ef75dbe32300cbdfd6aa48961995&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mmoreli&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-04-30 15:13:35&lt;/sys_updated_on&gt;&lt;table&gt;sys_update_set&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>28738000</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>70a158cedb397b00cbdfd6aa48961983</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef8b0000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Send to Review</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>94dbb336630db7005289da8b8b5564ac</update_guid>
+<update_guid_history>94dbb336630db7005289da8b8b5564ac:28738000,4e03025259e033004c4fe758a80c726e:856947057,929ab1523de0330087bccbd73b480ae0:1445088252,bbd93c76577b6700f93403e3a064da02:-978514483,bc947032143b6700b250e9a4368cf2e2:1545145687,3b4474b2017b6700921bb7540b4932a7:1764138358,b580a74a6a2f230029f2fcce9a483a82:-1490248598,f1447b3d78e323003082e96f24f88561:2070227613,1204bf317a27230037b329d6bac6ae31:-1437231224,0673bff941e323009622f7b87b8804cd:2015452050,5f537731f927230030dad53fb6db4e0f:-1437231224,2c4deff92be32300c802445af8d2132f:-1889360811,3b1caff584e32300940578354f9ee22b:1673162133,dc956ff53fe323005b6c97ba07302d0b:-1058925623,f945abf595e32300ca4e7308e539538f:-2082143946,0d13e3b531e32300a0711b8d82052a90:-1058925623,64c2ef7557e3230094be48ff1d411597:-1367990778</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_sys_update_set_u_root_sys_id</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_root_sys_id" table="sys_update_set"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Root sys ID&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_root_sys_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;sys_update_set&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mmoreli&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-06 21:28:37&lt;/sys_created_on&gt;&lt;sys_id&gt;09a53d9cdba32300cbdfd6aa48961984&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Root sys ID&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pulse - Global"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_sys_update_set_u_root_sys_id&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mmoreli&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-07 18:55:18&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-357715930</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>74a150cedb397b00cbdfd6aa489619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25eefe0000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Update Set.Root sys ID</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>a03cde64a0af23005d1d45232d18a11c</update_guid>
+<update_guid_history>a03cde64a0af23005d1d45232d18a11c:-357715930,38b5b1dce7a32300a9abf119e65d4663:-910297571</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_sys_remote_update_set_u_root_sys_id</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_root_sys_id" table="sys_remote_update_set"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Root sys ID&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_root_sys_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;sys_remote_update_set&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mmoreli&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-06 21:28:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b475319cdba32300cbdfd6aa489619b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Root sys ID&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pulse - Global"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_sys_remote_update_set_u_root_sys_id&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mmoreli&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-07 18:55:18&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2134029234</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>b0a150cedb397b00cbdfd6aa489619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef560000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table>sys_remote_update_set</table>
+<target_name>Retrieved Update Set.Root sys ID</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>f83cde64d6af23003077492279cb6132</update_guid>
+<update_guid_history>f83cde64d6af23003077492279cb6132:-2134029234,338531dc24a3230055b4f556132df49b:-2075583419</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_8dfc55c4db012300cbdfd6aa48961970</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.TableDataHelper&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Called by GlideAjaxHeper.&lt;/description&gt;&lt;name&gt;TableDataHelper&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var TableDataHelper = Class.create();
+TableDataHelper.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	getDataByQuery: function() {
+		var answers = {
+		};
+		var fieldValue;
+		//get parameters
+		var fieldList = this.getParameter('sysparm_field_list');
+		var forceSecure = gs.getProperty('table.data.helper.force_secure');
+		var useSecure = this.getParameter('sysparm_use_secure') + '';
+		//determine if using GlideRecord or GlideRecordSecure
+		var gr;
+		if(forceSecure === 'false' &amp;&amp; useSecure === 'false'){
+			gr = new GlideRecord(this.getParameter('sysparm_table_name'));
+		}else{
+			gr = new GlideRecordSecure(this.getParameter('sysparm_table_name'));
+		}
+		//Add main record query always field = value
+		gr.addQuery(this.getParameter('sysparm_src_field'), this.getParameter('sysparm_src_value') + '');
+		//Add additional queries if supplied
+		if(this.getParameter('sysparm_query_list')){
+			var queryList = this.getParameter('sysparm_query_list').split(',');
+			for(var j=0; j&lt;queryList.length; j++){
+				var queryVals = queryList[j].split(':');
+				gr.addQuery(queryVals[0], queryVals[1], queryVals[2]);
+			}
+		}
+		gr.setLimit(1);
+		gr.query();
+		if (gr.next()) {
+			var fieldListArray = fieldList.split(";");
+			for (var i = 0; i &lt; fieldListArray.length; i++) {
+				//Get values for field list
+				var fieldName = fieldListArray[i] + '';
+				//jgbox - begin changes to handle datetime conversion to local timezone
+				fieldType = gr.getElement(fieldName).getED().getInternalType();
+				if(fieldType == 'glide_date_time' || fieldType == 'glide_date'){
+					fieldValue = gr.getDisplayValue(fieldName);
+				}else{
+					fieldValue = gr.getElement(fieldName);
+				}
+				//jgbox - end changes to handle datetime conversion to local timezone
+				if (gs.nil(fieldValue)) {
+					fieldValue = "";
+				}
+				//Replace periods with underscores
+				if (fieldName.indexOf(".") &gt; -1) {
+					fieldName = fieldName.replace(/\./g, "_");
+				}
+				
+				answers[fieldName] = fieldValue.toString();
+			}
+		}
+		//return JSON string
+		return JSON.stringify(answers);
+	},
+	
+	getChoicesByQuery: function() {
+		var answer = [];
+		var fieldType, labelValue, valueValue;
+		//get parameters
+		var labelField = this.getParameter('sysparm_label_field');
+		var valueField = this.getParameter('sysparm_value_field');
+		var forceSecure = gs.getProperty('table.data.helper.force_secure');
+		var useSecure = this.getParameter('sysparm_use_secure') + '';
+		
+		//determine if using GlideRecord or GlideRecordSecure
+		var gr;
+		if(forceSecure === 'false' &amp;&amp; useSecure === 'false'){
+			gr = new GlideRecord(this.getParameter('sysparm_table_name'));
+		}else{
+			gr = new GlideRecordSecure(this.getParameter('sysparm_table_name'));
+		}
+		//Add queries if supplied
+		if(this.getParameter('sysparm_query_list')){
+			var queryList = this.getParameter('sysparm_query_list').split(',');
+			for(var j=0; j&lt;queryList.length; j++){
+				var queryVals = queryList[j].split(':');
+				gr.addQuery(queryVals[0], queryVals[1], queryVals[2]);
+			}
+		}
+		gr.orderBy(labelField);
+		gr.query();
+		while (gr.next()) {
+			
+			//This code is necessary to handle datetime conversion to local timezone
+			// Label first
+			fieldType = gr.getElement(labelField).getED().getInternalType();
+			if(fieldType == 'glide_date_time' || fieldType == 'glide_date'){
+				labelValue = gr.getDisplayValue(labelField);
+			}else{
+				labelValue = gr.getElement(labelField);
+			}
+			// Value now
+			fieldType = gr.getElement(valueField).getED().getInternalType();
+			if(fieldType == 'glide_date_time' || fieldType == 'glide_date'){
+				valueValue = gr.getDisplayValue(valueField);
+			}else{
+				valueValue = gr.getElement(valueField);
+			}
+			
+			if (!gs.nil(labelValue) &amp;&amp; !gs.nil(valueValue)) {
+				answer.push({label:labelValue.toString(), value:valueValue.toString()});
+				}
+			}
+			//return JSON string
+			return JSON.stringify(answer);
+		},
+		
+		type: 'TableDataHelper'
+	});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jgbox&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-04 18:26:51&lt;/sys_created_on&gt;&lt;sys_id&gt;8dfc55c4db012300cbdfd6aa48961970&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;TableDataHelper&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pulse - Global"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_8dfc55c4db012300cbdfd6aa48961970&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mmoreli&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-07 18:55:18&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-750308757</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>b8a150cedb397b00cbdfd6aa489619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef460000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table/>
+<target_name>TableDataHelper</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>683cde643eaf23004af3457317cb4b26</update_guid>
+<update_guid_history>683cde643eaf23004af3457317cb4b26:-750308757,54201a42f411230094006c0a58202c53:1652455138,8bc35b5336012300bfe2c3d52303bba1:-1185170354,1f5d9940dc01230036f23bad9f218b77:1483793865</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_sys_update_set_u_root_sys_id_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_root_sys_id" label="Root sys ID" language="en" table="sys_update_set"><sys_documentation action="INSERT_OR_UPDATE"><element>u_root_sys_id</element><help/><hint/><label>Root sys ID</label><language>en</language><name>sys_update_set</name><plural>Root sys IDs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>mmoreli</sys_created_by><sys_created_on>2019-02-06 21:28:38</sys_created_on><sys_id>34b5b1dcdba32300cbdfd6aa48961965</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Root sys ID</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</sys_scope><sys_update_name>sys_documentation_sys_update_set_u_root_sys_id_en</sys_update_name><sys_updated_by>mmoreli</sys_updated_by><sys_updated_on>2019-02-07 18:55:18</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>733555188</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>bca150cedb397b00cbdfd6aa489619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef090000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Update Set.Root sys ID</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>a43cde6472af230071310cbfe915cf16</update_guid>
+<update_guid_history>a43cde6472af230071310cbfe915cf16:733555188,38b5b1dc83a323006f7a023b9b6a1f6b:1282634155</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_741f86d4dbe32300cbdfd6aa489619a6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2/&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Code Scan&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[doCodeScan();
+
+function doCodeScan() {
+	action.setRedirectURL(current);
+	var usUtils = new x_wms_pulse.PulseUtils();
+	usUtils.printCodeScan(current.sys_id + '');
+}
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mmoreli&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-06 23:21:13&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;741f86d4dbe32300cbdfd6aa489619a6&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Code Scan&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pulse - Global"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_741f86d4dbe32300cbdfd6aa489619a6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mmoreli&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-07 18:55:18&lt;/sys_updated_on&gt;&lt;table&gt;sys_update_set&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-499708133</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>bca158cedb397b00cbdfd6aa48961982</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef360000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table>sys_update_set</table>
+<target_name>Code Scan</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>a83cde6464af2300af50ddb69542aa22</update_guid>
+<update_guid_history>a83cde6464af2300af50ddb69542aa22:-499708133,9a7f4a5cc4e3230023d8bbf29e8a039c:2101338943</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_6f2ffe64db236300cbdfd6aa48961930</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.Pulse_code&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;Pulse_code&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/**
+ * This script is deliberately empty. It's used to workaround a new feature in
+ * Istanbul Patch 4 that requires a real record to be passed to GlideScopedEvaluator.
+ */]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mmoreli&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-07 21:28:50&lt;/sys_created_on&gt;&lt;sys_id&gt;6f2ffe64db236300cbdfd6aa48961930&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Pulse_code&lt;/sys_name&gt;&lt;sys_package display_value="Pulse - Global" source="0eee79acdbeb2300cbdfd6aa4896193b"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pulse - Global"&gt;0eee79acdbeb2300cbdfd6aa4896193b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_6f2ffe64db236300cbdfd6aa48961930&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mmoreli&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-07 21:28:50&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-814617985</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>f4a150cedb397b00cbdfd6aa489619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef2b0000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table/>
+<target_name>Pulse_code</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>215f3668b8236300925694ae86f16106</update_guid>
+<update_guid_history>215f3668b8236300925694ae86f16106:-814617985</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_0eee79acdbeb2300cbdfd6aa4896193b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><enforce_license>log</enforce_license><js_level>helsinki_es5</js_level><licensable>true</licensable><license_category>none</license_category><license_model>none</license_model><logo/><menu/><name>Pulse - Global</name><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>global</scope><scoped_administration>false</scoped_administration><short_description/><source>0eee79acdbeb2300cbdfd6aa4896193b</source><store_correlation_id/><store_url/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>mmoreli</sys_created_by><sys_created_on>2019-02-07 16:47:19</sys_created_on><sys_id>0eee79acdbeb2300cbdfd6aa4896193b</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>mmoreli</sys_updated_by><sys_updated_on>2019-05-31 20:47:56</sys_updated_on><template/><trackable>true</trackable><user_role/><vendor/><vendor_prefix/><version>1.0.1</version></sys_app></record_update>]]></payload>
+<payload_hash>1390847233</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>f8a150cedb397b00cbdfd6aa489619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25eee90000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table/>
+<target_name>Pulse - Global</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_guid>d0a1f0812831f700dcfcb34e4b377193</update_guid>
+<update_guid_history>d0a1f0812831f700dcfcb34e4b377193:1390847233,86ee35ec36eb2300de245d0949c239b8:619764281</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_sys_remote_update_set_u_root_sys_id_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_root_sys_id" label="Root sys ID" language="en" table="sys_remote_update_set"><sys_documentation action="INSERT_OR_UPDATE"><element>u_root_sys_id</element><help/><hint/><label>Root sys ID</label><language>en</language><name>sys_remote_update_set</name><plural>Root sys IDs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>mmoreli</sys_created_by><sys_created_on>2019-02-06 21:28:00</sys_created_on><sys_id>ff8531dcdba32300cbdfd6aa4896199c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Root sys ID</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</sys_scope><sys_update_name>sys_documentation_sys_remote_update_set_u_root_sys_id_en</sys_update_name><sys_updated_by>mmoreli</sys_updated_by><sys_updated_on>2019-02-07 18:55:18</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1294480154</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>f8a150cedb397b00cbdfd6aa489619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25efb20000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table>sys_remote_update_set</table>
+<target_name>Retrieved Update Set.Root sys ID</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>a03cde6466af2300407223fa7583722c</update_guid>
+<update_guid_history>a03cde6466af2300407223fa7583722c:-1294480154,bb8531dc07a323004a70acb246cd2ea5:-2046004963</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</application>
+<category>customer</category>
+<comments/>
+<name>sys_template_fa5878cadbb7530089fb2fb748961924</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_template"><sys_template action="INSERT_OR_UPDATE"><active>true</active><global>false</global><group/><link_element/><name>Development Request</name><next/><next_child/><roles/><short_description>Template for default fields for a Development Request change request</short_description><show_on_template_bar>true</show_on_template_bar><stand_alone>false</stand_alone><sys_class_name>sys_template</sys_class_name><sys_created_by>mmoreli</sys_created_by><sys_created_on>2018-08-09 17:38:30</sys_created_on><sys_id>fa5878cadbb7530089fb2fb748961924</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Development Request</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Pulse - Global">0eee79acdbeb2300cbdfd6aa4896193b</sys_scope><sys_update_name>sys_template_fa5878cadbb7530089fb2fb748961924</sys_update_name><sys_updated_by>mmoreli</sys_updated_by><sys_updated_on>2019-02-07 18:55:18</sys_updated_on><table>change_request</table><template>risk=4^impact=3^type=standard^test_plan=Product Owner should validate the functionality.^backout_plan=Backout the Update Set.^implementation_plan=Preview and Commit Update Set will be executed automatically.^state=-2^EQ</template><user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user><view/></sys_template></record_update>]]></payload>
+<payload_hash>-561888040</payload_hash>
+<remote_update_set display_value="Pulse - Global">f4a150cedb397b00cbdfd6aa489619df</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>mmoreli</sys_created_by>
+<sys_created_on>2019-06-03 21:02:05</sys_created_on>
+<sys_id>f8a158cedb397b00cbdfd6aa48961982</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b1f25ef9a0000001</sys_recorded_at>
+<sys_updated_by>mmoreli</sys_updated_by>
+<sys_updated_on>2019-06-03 21:02:05</sys_updated_on>
+<table>change_request</table>
+<target_name>Development Request</target_name>
+<type>Template</type>
+<update_domain>global</update_domain>
+<update_guid>b43cde6403af230047ff32b7f310583b</update_guid>
+<update_guid_history>b43cde6403af230047ff32b7f310583b:-561888040,4f89850654f75300ab6752da3061e59c:-596160689,414974ca32b75300e8644d394f0159de:-1943308684</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
